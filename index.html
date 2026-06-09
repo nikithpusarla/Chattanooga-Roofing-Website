@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chattanooga Roofing and Gutter</title>
+    <!-- PLACEHOLDER: Update meta description if needed -->
+    <meta name="description" content="Chattanooga's Trusted Roofing Specialists — Done Right, Every Time. Serving Hamilton County and beyond.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Oswald:wght@700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RoofingContractor",
+      "name": "Chattanooga Roofing and Gutter",
+      "url": "https://chattanoogaroofingco.com",
+      "telephone": "(423) 501-9856",
+      "email": "ted@chattanoogaroofingco.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "308 W 4th St",
+        "addressLocality": "Chattanooga",
+        "addressRegion": "TN",
+        "postalCode": "37402",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.facebook.com/ChattRoofingCompany/",
+        "https://twitter.com/ChattRoofingCo",
+        "https://www.youtube.com/channel/UCibnMfyQ5aZjgtxIWwRDZZg"
+      ],
+      "areaServed": "Chattanooga TN, Hixson TN, Ooltewah TN, Cleveland TN, East Brainerd TN, Red Bank TN, East Ridge TN, Middle Valley TN, Soddy Daisy TN, Collegedale TN, Signal Mountain TN, Ringgold GA, Fort Oglethorpe GA, Lookout Mountain GA, Dalton GA, Calhoun GA, Chickamauga GA, Flintstone GA",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.4",
+        "reviewCount": "14"
+      }
+    }
+    </script>
+    
+    <style>
+        /* CSS Tokens */
+        :root {
+          --color-bg-dark: #1C1C1E;
+          --color-bg-mid: #2C2F35;
+          --color-bg-light: #F7F4EF;
+          --color-white: #FFFFFF;
+          --color-accent: #F05A28;
+          --color-accent-hover: #D44E20;
+          --color-text-primary: #1C1C1E;
+          --color-text-muted: #6B7280;
+          --color-text-on-dark: #F7F4EF;
+          --font-display: 'Oswald', sans-serif;
+          --font-serif: 'Source Serif 4', serif;
+          --font-body: 'DM Sans', sans-serif;
+          --radius-card: 12px;
+          --radius-btn: 100px;
+          --shadow-card: 0 4px 24px rgba(0,0,0,0.10);
+          --shadow-card-hover: 0 12px 40px rgba(240,90,40,0.18);
+          --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        /* Reset & Base */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: var(--font-body); color: var(--color-text-primary); background: var(--color-white); line-height: 1.6; }
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); line-height: 1.2; text-transform: uppercase; }
+        h2 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 0.75rem; text-transform: none; }
+        p { margin-bottom: 1rem; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        img { max-width: 100%; height: auto; display: block; }
+        
+        /* Layout */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section { padding: 80px 0; }
+        .section-dark { background: var(--color-bg-dark); color: var(--color-text-on-dark); }
+        .section-light { background: var(--color-bg-light); }
+        
+        /* Animations */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulseRing {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(240, 90, 40, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(240, 90, 40, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(240, 90, 40, 0); }
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+            padding: 12px 28px; border-radius: var(--radius-btn); font-weight: 500;
+            cursor: pointer; transition: var(--transition); font-family: var(--font-body); border: 2px solid transparent; text-align: center;
+        }
+        .btn-orange { background: var(--color-accent); color: var(--color-white); }
+        .btn-orange:hover { background: var(--color-accent-hover); }
+        .btn-outline-white { border-color: var(--color-white); color: var(--color-white); background: transparent; }
+        .btn-outline-white:hover { background: rgba(255,255,255,0.1); }
+        .btn-outline-red { border-color: #ef4444; color: #ef4444; background: transparent; }
+        .btn-outline-red:hover { background: rgba(239, 68, 68, 0.1); }
+        
+        /* 1. Top Bar */
+        .top-bar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: var(--color-bg-dark); color: var(--color-white); padding: 15px 0;
+            transition: var(--transition);
+        }
+        .top-bar.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+        .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
+        .top-bar-left { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 1.2rem; text-transform: uppercase; }
+        .top-bar-center { font-size: 0.9rem; color: #a1a1aa; display: none; }
+        @media (min-width: 768px) { .top-bar-center { display: flex; align-items: center; gap: 5px; } }
+        .top-bar-right { display: flex; align-items: center; gap: 20px; }
+        .phone-link { color: var(--color-accent); font-weight: 500; display: none; align-items: center; gap: 6px; }
+        @media (min-width: 768px) { .phone-link { display: flex; } }
+        
+        /* Mobile Nav Toggle */
+        .menu-btn { display: none; cursor: pointer; color: white; padding: 10px; margin: -10px; }
+        .menu-icon { width: 24px; height: 2px; background: white; position: relative; display: inline-block; transition: background 0.2s; }
+        .menu-icon::before, .menu-icon::after { content: ''; position: absolute; width: 24px; height: 2px; background: white; left: 0; transition: var(--transition); }
+        .menu-icon::before { top: -8px; }
+        .menu-icon::after { top: 8px; }
+        #menu-toggle { display: none; }
+        
+        @media (max-width: 767px) {
+            .menu-btn { display: block; }
+            .top-bar-right .btn-orange { display: none; }
+            .nav-menu { 
+                display: block; position: absolute; top: 100%; left: 0; right: 0; background: var(--color-bg-dark); 
+                padding: 0; max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; 
+            }
+            #menu-toggle:checked ~ .nav-menu { max-height: 400px; padding: 10px 20px 20px; border-top: 1px solid var(--color-bg-mid); box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+            .nav-menu a { display: block; padding: 12px 0; color: white; border-bottom: 1px solid var(--color-bg-mid); }
+            .nav-menu a:last-child { border-bottom: none; }
+            #menu-toggle:checked ~ .menu-btn .menu-icon { background: transparent; }
+            #menu-toggle:checked ~ .menu-btn .menu-icon::before { transform: rotate(45deg); top: 0; }
+            #menu-toggle:checked ~ .menu-btn .menu-icon::after { transform: rotate(-45deg); top: 0; }
+        }
+        @media (min-width: 768px) { .nav-menu { display: none; } }
+
+        /* 2. Hero Section */
+        .hero {
+            height: 100vh; min-height: 600px; position: relative;
+            background: linear-gradient(rgba(28, 28, 30, 0.72), rgba(28, 28, 30, 0.72)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800') center/cover no-repeat;
+            display: flex; align-items: center; color: var(--color-white); padding-top: 60px;
+        }
+        .hero-content { display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; gap: 40px; padding-bottom: 80px; }
+        .hero-left { max-width: 650px; }
+        .hero-badge { display: inline-block; background: var(--color-accent); padding: 5px 12px; border-radius: 100px; font-size: 0.85rem; font-weight: 500; margin-bottom: 20px; animation: fadeUp 0.6s ease forwards; opacity: 0; }
+        .hero h1 { font-size: clamp(3rem, 5vw, 5rem); margin-bottom: 20px; animation: fadeUp 0.6s ease 0.15s forwards; opacity: 0; line-height: 1.1; }
+        .hero-subtext { font-family: var(--font-serif); font-size: 1.25rem; margin-bottom: 30px; color: #e4e4e7; animation: fadeUp 0.6s ease 0.3s forwards; opacity: 0; line-height: 1.4; }
+        .hero-ctas { display: flex; gap: 15px; margin-bottom: 30px; animation: fadeUp 0.6s ease 0.45s forwards; opacity: 0; flex-wrap: wrap; }
+        .hero-trust { display: flex; gap: 20px; font-size: 0.9rem; color: #a1a1aa; animation: fadeUp 0.6s ease 0.6s forwards; opacity: 0; flex-wrap: wrap; }
+        .hero-trust span { display: flex; align-items: center; gap: 5px; }
+        
+        .hero-right { display: flex; justify-content: center; align-items: center; animation: fadeUp 0.6s ease 0.75s forwards; opacity: 0; margin: 0 auto; }
+        @media (min-width: 1024px) { .hero-right { margin: 0; } }
+        .pulse-badge {
+            width: 180px; height: 180px; border-radius: 50%; background: var(--color-accent); color: var(--color-white);
+            display: flex; align-items: center; justify-content: center; text-align: center; font-weight: bold; cursor: pointer;
+            border: none; padding: 25px; font-size: 1.2rem; line-height: 1.3; animation: pulseRing 2s infinite; font-family: var(--font-body);
+        }
+        
+        .hero-stats-bar {
+            position: absolute; bottom: 0; left: 0; right: 0; background: rgba(28, 28, 30, 0.9);
+            border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0;
+        }
+        .hero-stats-bar .container { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; text-align: center; }
+        .stat-item { flex: 1; min-width: 150px; }
+        .stat-number { font-family: var(--font-display); font-size: 2rem; color: var(--color-accent); margin-bottom: 5px; line-height: 1; }
+        .stat-label { font-size: 0.85rem; color: #e4e4e7; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* 3. Social Proof Strip */
+        .social-proof { background: var(--color-accent); color: var(--color-white); padding: 15px 0; overflow: hidden; position: relative; white-space: nowrap; }
+        .marquee-container { display: inline-flex; animation: marquee 40s linear infinite; }
+        .marquee-container:hover { animation-play-state: paused; }
+        .marquee-item { display: inline-flex; align-items: center; gap: 10px; margin-right: 50px; font-family: var(--font-serif); font-size: 1.1rem; }
+        
+        /* 4. Services Section */
+        .section-header { text-align: center; max-width: 700px; margin: 0 auto 50px; }
+        .services-grid { display: grid; grid-template-columns: repeat(1, 1fr); gap: 30px; }
+        @media (min-width: 768px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 1024px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
+        .service-card {
+            background: var(--color-white); border-radius: var(--radius-card); overflow: hidden;
+            box-shadow: var(--shadow-card); transition: var(--transition); display: flex; flex-direction: column;
+        }
+        .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card-hover); }
+        .service-img { width: 100%; height: 220px; object-fit: cover; }
+        .service-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .service-icon-title { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; }
+        .service-icon-title svg { fill: var(--color-accent); width: 28px; height: 28px; flex-shrink: 0; }
+        .service-icon-title h3 { margin-bottom: 0; font-family: var(--font-display); text-transform: uppercase; font-size: 1.3rem; }
+        .service-desc { color: var(--color-text-muted); margin-bottom: 20px; flex-grow: 1; }
+        .service-link { color: var(--color-accent); font-weight: 500; margin-top: auto; display: inline-flex; align-items: center; gap: 5px; position: relative; width: fit-content; }
+        .service-link::after { content: ''; position: absolute; left: 0; bottom: -2px; width: 0; height: 2px; background: var(--color-accent); transition: var(--transition); }
+        .service-link:hover::after { width: 100%; }
+        
+        /* 5. Why Choose Us */
+        .why-us-block { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; margin-bottom: 80px; }
+        .why-us-block:last-child { margin-bottom: 0; }
+        @media (min-width: 768px) { 
+            .why-us-block { grid-template-columns: 1fr 1fr; } 
+            .why-us-block.reverse { direction: rtl; } 
+            .why-us-block.reverse > * { direction: ltr; } 
+        }
+        .why-us-img { background: var(--color-bg-mid); border-radius: var(--radius-card); padding: 40px; display: flex; justify-content: center; align-items: center; min-height: 350px; position: relative; overflow: hidden; }
+        .why-us-text h3 { color: var(--color-accent); font-family: var(--font-display); text-transform: uppercase; font-size: 2rem; margin-bottom: 20px; }
+        .why-us-text p { font-size: 1.1rem; color: #d4d4d8; }
+        
+        /* SVG Illustrations for Why Us */
+        .ill-map { width: 200px; height: 200px; fill: none; stroke: var(--color-accent); stroke-width: 2; stroke-dasharray: 4; animation: dash 20s linear infinite; }
+        @keyframes dash { to { stroke-dashoffset: 1000; } }
+        .ill-checklist { width: 150px; height: 180px; background: var(--color-white); border-radius: 8px; position: relative; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transform: rotate(-5deg); }
+        .ill-line { height: 8px; background: #e4e4e7; border-radius: 4px; margin-bottom: 15px; width: 100%; }
+        .ill-line.short { width: 60%; }
+        .ill-check { position: absolute; right: -15px; bottom: 20px; width: 50px; height: 50px; background: var(--color-accent); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; box-shadow: 0 5px 15px rgba(240,90,40,0.4); }
+        .ill-shield { width: 160px; height: 180px; color: var(--color-accent); }
+        
+        /* 6. Before & After Gallery */
+        .ba-container { max-width: 900px; margin: 0 auto; position: relative; aspect-ratio: 16/9; overflow: hidden; border-radius: var(--radius-card); box-shadow: var(--shadow-card); background: #eee; }
+        .ba-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+        .ba-img.after { z-index: 1; }
+        .ba-img.before { z-index: 2; clip-path: inset(0 50% 0 0); }
+        .ba-slider { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 4; opacity: 0; cursor: ew-resize; margin: 0; }
+        .ba-slider-line { position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background: var(--color-accent); z-index: 3; transform: translateX(-50%); pointer-events: none; }
+        .ba-slider-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 48px; height: 48px; background: var(--color-white); border: 3px solid var(--color-accent); border-radius: 50%; z-index: 3; pointer-events: none; display: flex; align-items: center; justify-content: center; color: var(--color-accent); box-shadow: 0 0 15px rgba(0,0,0,0.2); }
+        .ba-slider-btn::before, .ba-slider-btn::after { content: ''; position: absolute; width: 0; height: 0; border-style: solid; }
+        .ba-slider-btn::before { border-width: 6px 8px 6px 0; border-color: transparent var(--color-accent) transparent transparent; left: 8px; }
+        .ba-slider-btn::after { border-width: 6px 0 6px 8px; border-color: transparent transparent transparent var(--color-accent); right: 8px; }
+        .ba-label { text-align: center; margin-top: 20px; font-family: var(--font-serif); font-style: italic; color: var(--color-text-muted); font-size: 1.1rem; }
+        
+        /* 7. Storm Damage Banner */
+        .storm-banner { background: #3f1515; color: var(--color-white); padding: 50px 0; position: relative; overflow: hidden; border-top: 4px solid var(--color-accent); border-bottom: 4px solid var(--color-accent); }
+        .storm-content { display: flex; flex-direction: column; justify-content: space-between; align-items: center; gap: 30px; position: relative; z-index: 2; }
+        @media (min-width: 768px) { .storm-content { flex-direction: row; } }
+        .storm-text h2 { color: var(--color-accent); margin-bottom: 15px; display: flex; align-items: center; gap: 10px; font-size: 2.5rem; }
+        .storm-text p { max-width: 650px; font-size: 1.1rem; color: #fecaca; }
+        .storm-ctas { display: flex; gap: 15px; flex-wrap: wrap; }
+        .lightning-bg { position: absolute; right: 5%; top: -10%; opacity: 0.1; width: 250px; height: 250px; color: var(--color-white); animation: flash 3s infinite alternate; pointer-events: none; }
+        @keyframes flash { 0%, 90% { opacity: 0.05; } 95% { opacity: 0.3; } 100% { opacity: 0.1; } }
+        
+        /* 8. Testimonials Section */
+        .testimonials-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        @media (min-width: 768px) { .testimonials-grid { grid-template-columns: repeat(3, 1fr); } }
+        .testim-card { background: var(--color-bg-mid); border-radius: var(--radius-card); padding: 40px 30px; position: relative; }
+        .quote-mark { font-size: 4rem; color: var(--color-accent); font-family: var(--font-serif); line-height: 0; position: absolute; top: 40px; left: 30px; opacity: 0.5; }
+        .testim-text { font-family: var(--font-serif); font-style: italic; margin-bottom: 25px; min-height: 100px; font-size: 1.1rem; color: #e4e4e7; position: relative; z-index: 2; margin-top: 20px; }
+        .testim-author { font-weight: bold; font-family: var(--font-display); letter-spacing: 0.5px; color: var(--color-white); text-transform: uppercase; }
+        .testim-stars { color: #f59e0b; margin-top: 8px; display: flex; gap: 2px; }
+        
+        /* Mobile Carousel logic */
+        @media (max-width: 767px) {
+            .testimonials-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding-bottom: 20px; scrollbar-width: none; }
+            .testimonials-grid::-webkit-scrollbar { display: none; }
+            .testim-card { min-width: 85vw; scroll-snap-align: center; }
+        }
+        
+        /* 9. Service Area Map */
+        .service-area-box { background: var(--color-bg-dark); border-radius: var(--radius-card); padding: 50px; position: relative; overflow: hidden; border: 1px solid var(--color-bg-mid); }
+        .map-bg { position: absolute; inset: 0; opacity: 0.05; background-image: radial-gradient(circle at center, var(--color-white) 2px, transparent 2px); background-size: 40px 40px; }
+        .map-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 20px; height: 20px; background: var(--color-accent); border-radius: 50%; z-index: 1; box-shadow: 0 0 0 10px rgba(240,90,40,0.2); }
+        .area-lists { display: grid; grid-template-columns: 1fr; gap: 50px; position: relative; z-index: 2; }
+        @media (min-width: 768px) { .area-lists { grid-template-columns: 1fr 1fr; } }
+        .area-state h3 { color: var(--color-accent); font-family: var(--font-display); text-transform: uppercase; border-bottom: 2px solid var(--color-bg-mid); padding-bottom: 10px; margin-bottom: 20px; }
+        .area-pill-list { display: flex; flex-wrap: wrap; gap: 12px; }
+        .area-pill { background: var(--color-bg-mid); padding: 8px 16px; border-radius: 20px; font-size: 0.95rem; color: #e4e4e7; border: 1px solid rgba(255,255,255,0.05); }
+        .area-footer { text-align: center; margin-top: 40px; position: relative; z-index: 2; font-style: italic; color: #a1a1aa; }
+        
+        /* 10. Contact Form */
+        .contact-section .container { display: grid; grid-template-columns: 1fr; gap: 60px; }
+        @media (min-width: 1024px) { .contact-section .container { grid-template-columns: 1.5fr 1fr; align-items: start; } }
+        .contact-form { background: var(--color-white); padding: 40px; border-radius: var(--radius-card); box-shadow: var(--shadow-card); }
+        .form-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 20px; }
+        @media (min-width: 768px) { .form-grid { grid-template-columns: 1fr 1fr; } }
+        .form-group { display: flex; flex-direction: column; gap: 8px; }
+        .form-group.full { grid-column: 1 / -1; }
+        .form-group label { font-weight: 500; font-size: 0.9rem; color: var(--color-bg-dark); }
+        .form-control { padding: 14px 15px; border: 1px solid #d1d5db; border-radius: 8px; font-family: var(--font-body); font-size: 1rem; transition: var(--transition); background: #f9fafb; }
+        .form-control:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(240, 90, 40, 0.1); background: var(--color-white); }
+        textarea.form-control { resize: vertical; min-height: 120px; }
+        .trust-icons { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; margin-top: 25px; font-size: 0.85rem; color: var(--color-text-muted); font-weight: 500; }
+        .trust-icons span { display: flex; align-items: center; gap: 6px; }
+        .trust-icons svg { width: 16px; height: 16px; fill: var(--color-accent); }
+        
+        .contact-details h3 { font-size: 2.5rem; margin-bottom: 30px; font-family: var(--font-display); text-transform: uppercase; }
+        .contact-info-list { list-style: none; display: flex; flex-direction: column; gap: 25px; margin-bottom: 40px; }
+        .contact-info-list li { display: flex; gap: 15px; align-items: flex-start; }
+        .info-icon { background: rgba(240,90,40,0.1); width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--color-accent); }
+        .info-icon svg { width: 24px; height: 24px; fill: currentColor; }
+        .info-text strong { display: block; margin-bottom: 2px; font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 0.5px; text-transform: uppercase; }
+        .info-text p, .info-text a { color: var(--color-text-muted); }
+        .info-text a:hover { color: var(--color-accent); }
+        
+        .social-icons { display: flex; gap: 15px; }
+        .social-icon { width: 44px; height: 44px; border-radius: 50%; background: var(--color-bg-light); display: flex; align-items: center; justify-content: center; transition: var(--transition); color: var(--color-bg-dark); }
+        .social-icon:hover { background: var(--color-accent); color: var(--color-white); transform: translateY(-3px); }
+        .social-icon svg { width: 20px; height: 20px; fill: currentColor; }
+        
+        #form-success { display: none; background: #ecfdf5; color: #065f46; padding: 30px; border-radius: 8px; border: 1px solid #34d399; text-align: center; animation: fadeUp 0.5s ease; }
+        #form-success svg { width: 48px; height: 48px; fill: #10b981; margin-bottom: 15px; }
+        #form-success h4 { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 10px; }
+        
+        /* 11. Footer */
+        .footer { background: #111113; color: #a1a1aa; padding: 80px 0 30px; border-top: 5px solid var(--color-accent); }
+        .footer-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-bottom: 60px; }
+        @media (min-width: 768px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr 1.5fr; } }
+        .footer-logo { font-family: var(--font-display); font-size: 1.8rem; color: var(--color-white); margin-bottom: 20px; display: inline-flex; align-items: center; gap: 10px; text-transform: uppercase; }
+        .footer-logo svg { fill: var(--color-accent); }
+        .footer-desc { margin-bottom: 20px; max-width: 300px; }
+        .footer h4 { color: var(--color-white); margin-bottom: 25px; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 1px; font-size: 1.2rem; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+        .footer-links a:hover { color: var(--color-white); padding-left: 5px; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; flex-direction: column; gap: 15px; text-align: center; font-size: 0.9rem; }
+        @media (min-width: 768px) { .footer-bottom { flex-direction: row; justify-content: space-between; text-align: left; } }
+        
+        /* Scroll Reveal Utility */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal.in-view { opacity: 1; transform: translateY(0); }
+
+        /* Mobile Fixed CTA */
+        .mobile-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--color-white); padding: 12px 20px; box-shadow: 0 -4px 15px rgba(0,0,0,0.15); z-index: 998; justify-content: space-between; align-items: center; }
+        .mobile-cta .phone { font-family: var(--font-display); font-size: 1.2rem; color: var(--color-bg-dark); font-weight: bold; }
+        @media (max-width: 767px) { .mobile-cta { display: flex; } body { padding-bottom: 70px; } }
+        
+        /* Back to top */
+        #back-to-top { position: fixed; bottom: 90px; right: 20px; width: 45px; height: 45px; background: var(--color-bg-dark); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0; pointer-events: none; transition: var(--transition); z-index: 999; border: 2px solid var(--color-accent); }
+        @media (min-width: 768px) { #back-to-top { bottom: 30px; right: 30px; } }
+        #back-to-top.visible { opacity: 1; pointer-events: all; }
+        #back-to-top:hover { transform: translateY(-5px); background: var(--color-accent); }
+        #back-to-top svg { width: 24px; height: 24px; fill: currentColor; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. TOP BAR -->
+    <header class="top-bar">
+        <div class="container">
+            <a href="#" class="top-bar-left">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z"/></svg>
+                <span>Chattanooga Roofing</span>
+            </a>
+            <div class="top-bar-center">
+                <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Serving Chattanooga & SE Tennessee
+            </div>
+            <div class="top-bar-right">
+                <!-- PLACEHOLDER: Verify phone number -->
+                <a href="tel:4235019856" class="phone-link">
+                    <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    (423) 501-9856
+                </a>
+                <a href="#contact" class="btn btn-orange">Get Free Estimate</a>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn" aria-label="Toggle Menu">
+                <span class="menu-icon"></span>
+            </label>
+            <nav class="nav-menu">
+                <a href="#services">Services</a>
+                <a href="#why-us">Why Choose Us</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-left">
+                <span class="hero-badge">⚡ Storm Season Ready</span>
+                <h1>Chattanooga's Most Trusted Roofing Company</h1>
+                <!-- PLACEHOLDER: Update year founded if known -->
+                <p class="hero-subtext">Licensed. Insured. Local. Serving Hamilton County and beyond. Free inspections, fair prices, real craftsmanship.</p>
+                <div class="hero-ctas">
+                    <!-- PLACEHOLDER: Verify phone number -->
+                    <a href="tel:4235019856" class="btn btn-orange">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        Call Now
+                    </a>
+                    <a href="#contact" class="btn btn-outline-white">Get Free Estimate</a>
+                </div>
+                <div class="hero-trust">
+                    <span><svg viewBox="0 0 24 24" width="16" height="16" fill="var(--color-accent)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Licensed & Insured</span>
+                    <span><svg viewBox="0 0 24 24" width="16" height="16" fill="var(--color-accent)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 5-Star Rated</span>
+                    <span><svg viewBox="0 0 24 24" width="16" height="16" fill="var(--color-accent)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 500+ Roofs Done</span>
+                    <span><svg viewBox="0 0 24 24" width="16" height="16" fill="var(--color-accent)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Free Inspections</span>
+                </div>
+            </div>
+            <div class="hero-right">
+                <button class="pulse-badge" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    Book Your FREE Inspection Today &rarr;
+                </button>
+            </div>
+        </div>
+        <div class="hero-stats-bar">
+            <div class="container">
+                <!-- PLACEHOLDER: Update stat numbers to actuals -->
+                <div class="stat-item"><div class="stat-number" data-target="500">0+</div><div class="stat-label">Roofs Installed</div></div>
+                <div class="stat-item"><div class="stat-number" data-target="15">0+</div><div class="stat-label">Years Experience</div></div>
+                <div class="stat-item"><div class="stat-number" data-target="1">0</div><div class="stat-label">Hamilton Co. Choice</div></div>
+                <div class="stat-item"><div class="stat-number" data-target="100">0%</div><div class="stat-label">Satisfaction Guarantee</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SOCIAL PROOF STRIP -->
+    <section class="social-proof">
+        <div class="marquee-container">
+            <!-- PLACEHOLDER: Replace with actual Google Reviews -->
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "Best roofers in Chattanooga, hands down!" — Mike T., Hixson</div>
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "Done in one day, cleaner than they found it." — Sarah K., Ooltewah</div>
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "Professional, honest, and affordable." — David L., Signal Mtn</div>
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "Saved us from major water damage." — Lisa M., Cleveland</div>
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "The crew was amazing. Great cleanup!" — John R., East Ridge</div>
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "Highly recommend their metal roofs." — Robert P., Ringgold</div>
+            <!-- Duplicate for seamless looping -->
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "Best roofers in Chattanooga, hands down!" — Mike T., Hixson</div>
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "Done in one day, cleaner than they found it." — Sarah K., Ooltewah</div>
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "Professional, honest, and affordable." — David L., Signal Mtn</div>
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "Saved us from major water damage." — Lisa M., Cleveland</div>
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "The crew was amazing. Great cleanup!" — John R., East Ridge</div>
+            <div class="marquee-item">⭐⭐⭐⭐⭐ "Highly recommend their metal roofs." — Robert P., Ringgold</div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION -->
+    <section id="services" class="section section-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>What We Do — All Under One Roof</h2>
+                <p>Expert craftsmanship and premium materials for every exterior need.</p>
+            </div>
+            <div class="services-grid">
+                <!-- PLACEHOLDER: Provide actual local project photos for services -->
+                <div class="service-card reveal">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Shingle Roofs" class="service-img" loading="lazy">
+                    <div class="service-content">
+                        <div class="service-icon-title">
+                            <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
+                            <h3>Shingle Roofs</h3>
+                        </div>
+                        <p class="service-desc">Durable, beautiful, and built for Tennessee weather. We install and replace shingle roofs that last decades.</p>
+                        <a href="#contact" class="service-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600" alt="Metal Roofs" class="service-img" loading="lazy">
+                    <div class="service-content">
+                        <div class="service-icon-title">
+                            <svg viewBox="0 0 24 24"><path d="M2 12h3v8h14v-8h3L12 3 2 12z"/></svg>
+                            <h3>Metal Roofs</h3>
+                        </div>
+                        <p class="service-desc">Long-lasting metal roofing that saves energy and handles anything the Tennessee sky throws at it.</p>
+                        <a href="#contact" class="service-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600" alt="Roof Repairs" class="service-img" loading="lazy">
+                    <div class="service-content">
+                        <div class="service-icon-title">
+                            <svg viewBox="0 0 24 24"><path d="M22.7 14.3L21.7 15.3 19.6 13.2 20.6 12.2C21.4 11.4 22.7 11.4 23.5 12.2 24.3 13 24.3 14.3 23.5 15.1L22.7 14.3ZM13 19.9V22H15.1L21.2 15.9 19.1 13.8 13 19.9Z"/></svg>
+                            <h3>Roof Repairs</h3>
+                        </div>
+                        <p class="service-desc">From a single shingle to major leaks — fast, lasting fixes at fair prices. We'll find the problem and fix it right.</p>
+                        <a href="#contact" class="service-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Roof Maintenance" class="service-img" loading="lazy">
+                    <div class="service-content">
+                        <div class="service-icon-title">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            <h3>Roof Maintenance</h3>
+                        </div>
+                        <p class="service-desc">Regular maintenance extends your roof's life by years. Let us keep small issues from becoming costly disasters.</p>
+                        <a href="#contact" class="service-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600" alt="Gutter Installation" class="service-img" loading="lazy">
+                    <div class="service-content">
+                        <div class="service-icon-title">
+                            <svg viewBox="0 0 24 24"><path d="M12 20a8 8 0 01-8-8c0-4.42 3.58-8 8-8s8 3.58 8 8a8 8 0 01-8 8zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+                            <h3>Gutter Installation</h3>
+                        </div>
+                        <p class="service-desc">Keep water away from your foundation with seamless gutter systems designed for Tennessee rain.</p>
+                        <a href="#contact" class="service-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600" alt="Vinyl Siding" class="service-img" loading="lazy">
+                    <div class="service-content">
+                        <div class="service-icon-title">
+                            <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm16 16V5H5v14h14z"/></svg>
+                            <h3>Vinyl Siding</h3>
+                        </div>
+                        <p class="service-desc">Boost curb appeal and energy efficiency with durable vinyl siding installed to last decades.</p>
+                        <a href="#contact" class="service-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600" alt="Replacement Windows" class="service-img" loading="lazy">
+                    <div class="service-content">
+                        <div class="service-icon-title">
+                            <svg viewBox="0 0 24 24"><path d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H4V5h16v14z"/></svg>
+                            <h3>Replacement Windows</h3>
+                        </div>
+                        <p class="service-desc">Cut energy bills and boost comfort. We install replacement windows in Chattanooga, Ooltewah, and Cleveland TN.</p>
+                        <a href="#contact" class="service-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. WHY CHOOSE US -->
+    <section id="why-us" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Why Chattanooga Homeowners Choose Us</h2>
+            </div>
+            
+            <div class="why-us-block reveal">
+                <div class="why-us-img">
+                    <svg class="ill-map" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40" />
+                        <circle cx="50" cy="50" r="10" fill="var(--color-accent)" stroke="none" />
+                        <path d="M50 40 L50 10 M50 60 L50 90 M40 50 L10 50 M60 50 L90 50" stroke-dasharray="0" />
+                    </svg>
+                </div>
+                <div class="why-us-text">
+                    <h3>Local & Accountable</h3>
+                    <p>We're not a national franchise — we're your neighbors. Every job is personally overseen by our team. You'll always know who's on your roof and who to call with questions.</p>
+                </div>
+            </div>
+            
+            <div class="why-us-block reverse reveal">
+                <div class="why-us-img">
+                    <div class="ill-checklist">
+                        <div class="ill-line"></div>
+                        <div class="ill-line"></div>
+                        <div class="ill-line short"></div>
+                        <div class="ill-line"></div>
+                        <div class="ill-line short"></div>
+                        <div class="ill-check">
+                            <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-us-text">
+                    <h3>No Surprises Pricing</h3>
+                    <p>We give you a detailed written estimate before work begins. No hidden fees, no pressure. If we find something unexpected, we talk to you first — always.</p>
+                </div>
+            </div>
+            
+            <div class="why-us-block reveal">
+                <div class="why-us-img">
+                    <svg class="ill-shield" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                    </svg>
+                </div>
+                <div class="why-us-text">
+                    <h3>Done Right or Done Over</h3>
+                    <p>Every roof we install is backed by a workmanship warranty. If something's not right, we come back and fix it. That's our promise to every single customer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. BEFORE & AFTER GALLERY -->
+    <section id="gallery" class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our Work Speaks for Itself</h2>
+                <p>Drag the slider to see the difference.</p>
+            </div>
+            <!-- PLACEHOLDER: Replace with actual before/after project photos -->
+            <div class="ba-container reveal">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" alt="After Roof Replacement" class="ba-img after" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800" alt="Before Roof Replacement" class="ba-img before" id="ba-before" loading="lazy">
+                <div class="ba-slider-line" id="ba-line"></div>
+                <div class="ba-slider-btn" id="ba-btn"></div>
+                <input type="range" min="0" max="100" value="50" class="ba-slider" id="ba-slider" aria-label="Compare before and after">
+            </div>
+            <p class="ba-label reveal">Ooltewah Residential — Full Roof Replacement — GAF Timberline HDZ Shingles</p>
+        </div>
+    </section>
+
+    <!-- 7. STORM DAMAGE EMERGENCY BANNER -->
+    <section class="storm-banner">
+        <svg class="lightning-bg" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+        <div class="container storm-content">
+            <div class="storm-text reveal">
+                <h2>🚨 Storm Damage? We Respond Fast.</h2>
+                <p>Hail, wind, or fallen trees — call us for emergency tarping and rapid assessment. We also work directly with your insurance company.</p>
+            </div>
+            <div class="storm-ctas reveal">
+                <!-- PLACEHOLDER: Verify phone number -->
+                <a href="tel:4235019856" class="btn btn-outline-white">📞 Emergency Line</a>
+                <a href="#contact" class="btn btn-orange">File an Insurance Claim &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS SECTION -->
+    <section id="reviews" class="section section-dark" style="background: var(--color-bg-dark);">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Real Customers. Real Results.</h2>
+            </div>
+            <div class="testimonials-grid reveal">
+                <!-- PLACEHOLDER: Replace with actual customer testimonials -->
+                <div class="testim-card">
+                    <span class="quote-mark">"</span>
+                    <p class="testim-text">From the first call to cleanup, this crew was professional, on time, and the price was exactly what they quoted. My new roof looks incredible.</p>
+                    <div class="testim-author">James R., Signal Mountain</div>
+                    <div class="testim-stars">★★★★★</div>
+                </div>
+                <div class="testim-card">
+                    <span class="quote-mark">"</span>
+                    <p class="testim-text">They spotted a gutter issue no one else caught during the free inspection. Saved me thousands in potential water damage. Highly recommend.</p>
+                    <div class="testim-author">Denise M., Hixson</div>
+                    <div class="testim-stars">★★★★★</div>
+                </div>
+                <div class="testim-card">
+                    <span class="quote-mark">"</span>
+                    <p class="testim-text">After the hailstorm, they were at my house in two days and had everything wrapped up fast. The insurance process was painless.</p>
+                    <div class="testim-author">Carlos V., East Ridge</div>
+                    <div class="testim-stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. SERVICE AREA SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Proudly Serving Southeast Tennessee & North Georgia</h2>
+            </div>
+            <div class="service-area-box reveal">
+                <div class="map-bg"></div>
+                <div class="map-center"></div>
+                
+                <div class="area-lists">
+                    <div class="area-state">
+                        <h3>Tennessee</h3>
+                        <div class="area-pill-list">
+                            <span class="area-pill">Chattanooga</span>
+                            <span class="area-pill">Hixson</span>
+                            <span class="area-pill">Ooltewah</span>
+                            <span class="area-pill">Cleveland</span>
+                            <span class="area-pill">East Brainerd</span>
+                            <span class="area-pill">Red Bank</span>
+                            <span class="area-pill">East Ridge</span>
+                            <span class="area-pill">Middle Valley</span>
+                            <span class="area-pill">Soddy Daisy</span>
+                            <span class="area-pill">Collegedale</span>
+                            <span class="area-pill">Signal Mountain</span>
+                        </div>
+                    </div>
+                    <div class="area-state">
+                        <h3>Georgia</h3>
+                        <div class="area-pill-list">
+                            <span class="area-pill">Ringgold</span>
+                            <span class="area-pill">Fort Oglethorpe</span>
+                            <span class="area-pill">Lookout Mountain</span>
+                            <span class="area-pill">Dalton</span>
+                            <span class="area-pill">Calhoun</span>
+                            <span class="area-pill">Chickamauga</span>
+                            <span class="area-pill">Flintstone</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="area-footer">Not sure if we serve your area? Call us — chances are, we do.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CONTACT / ESTIMATE FORM -->
+    <section id="contact" class="section section-light contact-section">
+        <div class="container">
+            <div class="contact-form reveal">
+                <h2>Get Your Free Roofing Estimate</h2>
+                <p style="margin-bottom: 25px; color: var(--color-text-muted);">No Pressure, No Obligation.</p>
+                
+                <form id="quote-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fname">Full Name</label>
+                            <input type="text" id="fname" class="form-control" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="(423) 555-0123">
+                        </div>
+                        <div class="form-group full">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" class="form-control" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="Shingle Roof">Shingle Roof</option>
+                                <option value="Metal Roof">Metal Roof</option>
+                                <option value="Roof Repair">Roof Repair</option>
+                                <option value="Roof Maintenance">Roof Maintenance</option>
+                                <option value="Gutter Installation">Gutter Installation</option>
+                                <option value="Vinyl Siding">Vinyl Siding</option>
+                                <option value="Replacement Windows">Replacement Windows</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="property">Property Type</label>
+                            <select id="property" class="form-control" required>
+                                <option value="" disabled selected>Select Type</option>
+                                <option value="Residential">Residential</option>
+                                <option value="Commercial">Commercial</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label for="message">Brief Message</label>
+                            <textarea id="message" class="form-control" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <div class="form-group full">
+                            <label for="time">Best Time to Call</label>
+                            <select id="time" class="form-control">
+                                <option value="Anytime">Anytime</option>
+                                <option value="Morning">Morning</option>
+                                <option value="Afternoon">Afternoon</option>
+                                <option value="Evening">Evening</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-orange" style="width: 100%; font-size: 1.1rem; padding: 15px;">Request My Free Estimate &rarr;</button>
+                    
+                    <div class="trust-icons">
+                        <span><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg> Your info is private</span>
+                        <span><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg> We call within 24 hours</span>
+                        <span><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> No obligation, ever</span>
+                    </div>
+                </form>
+                
+                <div id="form-success">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <h4>Request Received!</h4>
+                    <p>Thank you for reaching out. A member of our team will call you shortly to schedule your free inspection.</p>
+                </div>
+            </div>
+            
+            <div class="contact-details reveal">
+                <h3>Contact Us</h3>
+                <ul class="contact-info-list">
+                    <li>
+                        <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+                        <div class="info-text">
+                            <strong>Call or Text</strong>
+                            <!-- PLACEHOLDER: Verify phone number -->
+                            <a href="tel:4235019856">(423) 501-9856</a>
+                            <p style="font-size: 0.85rem; margin-top: 5px; color: var(--color-accent);">24/7 Emergency Service Available</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+                        <div class="info-text">
+                            <strong>Location</strong>
+                            <!-- PLACEHOLDER: Verify Address -->
+                            <p>308 W 4th St<br>Chattanooga, TN 37402</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+                        <div class="info-text">
+                            <strong>Email</strong>
+                            <!-- PLACEHOLDER: Verify email -->
+                            <a href="mailto:ted@chattanoogaroofingco.com">ted@chattanoogaroofingco.com</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/><path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></div>
+                        <div class="info-text">
+                            <strong>Business Hours</strong>
+                            <p>Mon–Fri: 7:00 AM – 6:00 PM<br>Sat: 8:00 AM – 2:00 PM<br>Sun: Closed (Emergency 24/7)</p>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ChattRoofingCompany/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                    </a>
+                    <a href="https://twitter.com/ChattRoofingCo" target="_blank" rel="noopener" class="social-icon" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCibnMfyQ5aZjgtxIWwRDZZg" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24"><path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">
+                        <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 2L1 12h3v9h6v-6h4v6h6v-9h3L12 2z"/></svg>
+                        Chattanooga Roofing
+                    </a>
+                    <p class="footer-desc">Chattanooga's Trusted Roofing Specialists — Done Right, Every Time. Expert roofing and exterior services for Hamilton County and North Georgia.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Shingle Roofs</a></li>
+                        <li><a href="#services">Metal Roofs</a></li>
+                        <li><a href="#services">Roof Repairs</a></li>
+                        <li><a href="#services">Roof Maintenance</a></li>
+                        <li><a href="#services">Gutters & Siding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service Areas</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Chattanooga, TN</a></li>
+                        <li><a href="#">Ooltewah, TN</a></li>
+                        <li><a href="#">Cleveland, TN</a></li>
+                        <li><a href="#">Ringgold, GA</a></li>
+                        <li><a href="#">Dalton, GA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#gallery">Project Gallery</a></li>
+                        <li><a href="#reviews">Customer Reviews</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chattanooga Roofing and Gutter. All rights reserved.</p>
+                <!-- PLACEHOLDER: Verify license number -->
+                <p>TN License #71985 | Licensed & Insured in Tennessee</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile CTA Bar -->
+    <div class="mobile-cta">
+        <!-- PLACEHOLDER: Verify phone number -->
+        <a href="tel:4235019856" class="phone">(423) 501-9856</a>
+        <a href="#contact" class="btn btn-orange">Get Estimate</a>
+    </div>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+    </button>
+
+    <!-- Interactions Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Scroll handling for top bar and back to top
+            const topBar = document.querySelector('.top-bar');
+            const backToTop = document.getElementById('back-to-top');
+            
+            window.addEventListener('scroll', () => {
+                if(window.scrollY > 50) {
+                    topBar.classList.add('scrolled');
+                } else {
+                    topBar.classList.remove('scrolled');
+                }
+                
+                if(window.scrollY > 400) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Intersection Observer for Scroll Reveals
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+            
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // Intersection Observer for Stat Counters
+            const statElements = document.querySelectorAll('.stat-number');
+            let statsCounted = false;
+            
+            const statObserver = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting && !statsCounted) {
+                    statsCounted = true;
+                    statElements.forEach(el => {
+                        const target = parseInt(el.getAttribute('data-target'));
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+                        
+                        const updateCounter = () => {
+                            current += step;
+                            if (current < target) {
+                                el.innerText = Math.ceil(current) + (el.innerText.includes('%') ? '%' : '+');
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                el.innerText = target + (el.innerText.includes('%') ? '%' : '+');
+                            }
+                        };
+                        updateCounter();
+                    });
+                }
+            }, { threshold: 0.5 });
+            
+            const statsBar = document.querySelector('.hero-stats-bar');
+            if (statsBar) statObserver.observe(statsBar);
+
+            // Before/After Slider Interaction
+            const baSlider = document.getElementById('ba-slider');
+            const baBefore = document.getElementById('ba-before');
+            const baLine = document.getElementById('ba-line');
+            const baBtn = document.getElementById('ba-btn');
+            
+            if (baSlider) {
+                baSlider.addEventListener('input', (e) => {
+                    const val = e.target.value;
+                    baBefore.style.clipPath = `inset(0 ${100 - val}% 0 0)`;
+                    baLine.style.left = `${val}%`;
+                    baBtn.style.left = `${val}%`;
+                });
+            }
+
+            // Contact Form Submission (Simulated)
+            const form = document.getElementById('quote-form');
+            const successMsg = document.getElementById('form-success');
+            
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    // Basic HTML5 validation is handled natively by the browser
+                    // Hide form and show success message
+                    form.style.display = 'none';
+                    successMsg.style.display = 'block';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
